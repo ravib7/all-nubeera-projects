@@ -1,0 +1,75 @@
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  align-items: center;
+  width: 100%;
+  height: 80vh; /* Adjust height as needed */
+  /* background-color: #f0f0f0; */
+  overflow: hidden;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.text {
+  flex: 1;
+  padding: 20px;
+}
+
+.media {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.DevOps-gif
+{
+  width: 800px;
+  height: 600px;
+}
+
+.media img,
+.media video {
+  max-width: 100%;
+  height: auto;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+.controls button {
+  border: none;
+  background-color: #4b9ff6;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.controls button:hover {
+  background-color: #fff;
+  color: #000;
+}

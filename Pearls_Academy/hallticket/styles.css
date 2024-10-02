@@ -1,0 +1,406 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 3em;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-top: .5em;
+    padding: 10px;
+    height: 3em;
+}
+header img,
+footer img{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    /* padding: 10px; */
+    height: 100%;
+}
+
+#form-container {
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.detail-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hallcenter-detail {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px;
+    /* background-color: #ddd; */
+    border-radius: 5px;
+}
+
+.hallcenter-detail h1 {
+    text-align: center;
+}
+
+.hallcenter-detail label {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+.hallcenter-detail input {
+    width: 45%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.candidate-image {
+    width: 20%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.candidate-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.hallticket-details {
+    width: 100%;
+    /* margin-top: 10px 0px 10px 10px; */
+    display: flex;
+    margin: 10px 0px;
+    height: 40px;
+    justify-content: space-between;
+}
+
+.hallticket-details label {
+    /* width: 48%;
+    box-sizing: border-box; */
+
+    width: 49%;
+    padding-left: 10px;
+    margin: 0px 0px 0px 0px;
+    border: 2px solid #000000;
+    height: 92%;
+}
+
+.hallticket-details input {
+    /* width: 48%;
+    box-sizing: border-box; */
+
+    width: 49%;
+    padding-left: 10px;
+    margin: 0;
+    border: 2px solid #000000;
+    border-left: none;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+.date-time {
+    display: flex;
+    margin: 0px;
+    height: 40px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.date-time input {
+    /* display: flex; */
+    width: 49%;
+    padding-left: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-left: none;
+    height: auto;
+}
+
+.date-time label {
+    /* display: flex; */
+    width: 10%;
+    align-self: center;
+    border: 2px solid #000000;
+    padding: 10px 0px 0px 10px;
+    margin: 0px 0px 0px 0px;
+    /* padding-left: 20px; */
+    height: 65%;
+}
+
+.exam-center {
+    display: flex;
+    height: 60px;
+    /* border: 2px solid #000000; */
+    margin-top: 10px;
+    align-items: center;
+}
+
+.exam-center input {
+    /* display: flex; */
+    width: 70%;
+    /* align-self: center; */
+    height: 100%;
+    padding: 0;
+    border: 2px solid #000000;
+    border-left: none;
+    margin: 0;
+
+}
+
+.exam-center label {
+    /* display: flex; */
+    width: 30%;
+    height: 62%;
+    /* align-self: center; */
+    border: 2px solid #000000;
+    margin: 0;
+    padding: 20px 0px 0px 10px;
+    padding-left: 10px;
+
+}
+
+h2,
+h3 {
+    margin-top: 20px;
+}
+
+.candidate-details {
+    /* background-color: #ddd; */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.candidate-details h2 {
+    background-color: #ddd;
+    height: 60px;
+
+}
+
+.candidate-details label {
+    background-color: #ddd;
+    display: inline-block;
+}
+
+.candidate-details input {
+    display: inline-block;
+}
+
+.candidate-name {
+    display: flex;
+    height: 50px;
+}
+
+.candidate-name label {
+    width: 30%;
+    height: 90%;
+}
+
+.candidate-name input {
+    width: 70%;
+    height: 90%;
+}
+
+ul {
+    /* list-style-type: none; */
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.signature-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.signature-container h3 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.signature-fields {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.signature-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signature-container label {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.signature-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .detail-section {
+        flex-direction: column;
+    }
+
+    .hallcenter-detail,
+    .candidate-image {
+        width: 100%;
+    }
+
+    .hallticket-details {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5em;
+    }
+
+    .hallticket-details label,
+    .hallticket-details input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        border: 2px solid black;
+    }
+
+    .date-time {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5em;
+    }
+
+    .date-time input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        height: 1em;
+    }
+
+    .date-time label {
+        width: 100%;
+        margin-bottom: 5px;
+        height: 1em;
+    }
+
+    .exam-center {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5em;
+    }
+
+    .exam-center input,
+    .exam-center label {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .candidate-name {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .candidate-name label,
+    .candidate-name input {
+        border: 2px solid black;
+        height: 2em;
+        width: 100%;
+    }
+
+    /* .candidate-details label {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .candidate-details input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 2px solid black;
+    } */
+
+    .candidate-details h2 {
+        font-size: 1em;
+    }
+
+    .candidate-details ul li {
+        font-size: 0.8em;
+    }
+    .signature-fields{
+        flex-direction: column;
+    }
+
+    .signature-input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    .signature-input input,
+    .signature-input label {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+}

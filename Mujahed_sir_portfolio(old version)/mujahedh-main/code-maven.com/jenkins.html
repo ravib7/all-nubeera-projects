@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <link rel="canonical" href="https://code-maven.com/jenkins" />
+
+  
+  <link rel="next" href="install-jenkins-on-ubuntu.html">
+
+  <link href="/atom" rel="alternate" type="application/atom+xml" title ="Code Maven" />
+
+  <script>
+    var user_info = {"logged_in":0};
+  </script>
+
+  <!-- Google recommended indication of translated versions -->
+  
+
+
+  <title>Jenkins</title>
+  <meta name="description" content="">
+  <meta name="author" content="szabgab">
+
+  <!-- The Open Graph protocol -->
+  <meta property="og:title" content="Jenkins"/>
+  <meta property="og:type" content="article"/>
+  
+      <meta property="og:image" content="img/code_maven_128.png"/>
+  
+  <meta property="og:site_name" content="Code Maven"/>
+  <meta property="og:description" content=""/>
+  
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" rel="stylesheet">
+
+
+  <link href="css/style.css" rel="stylesheet">
+  
+  <link href="stati css/site.css" rel="stylesheet">
+
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="javascripts/perlmaven.js?20210507.1"></script>
+  <script src="js/maven.js"></script>
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@szabgab" />
+  <meta name="twitter:creator" content="@szabgab" />
+  <meta name="twitter:title" content="Jenkins" />
+  <meta name="twitter:description" content="" />
+  
+     <meta name="twitter:image" content="img/code_maven_128.png" />
+  
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Code Maven</a>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="navbar">
+      
+        <ul class="nav navbar-nav   ">
+          
+            
+
+<!--
+            
+              
+                <li><a href="/pm/login">Login</a></li>
+                <li><a href="/pm/register">Register</a></li>
+              
+            
+-->
+
+            
+
+            
+                        <li><a href="/exercises">Exercises</a></li>
+            
+
+<!--
+            
+-->
+
+            
+
+            
+                        <li><a href="/slides">Slides</a></li>
+            
+
+<!--
+            
+-->
+
+            
+
+            
+                        <li><a href="/courses">Courses</a></li>
+            
+
+<!--
+            
+-->
+
+            
+
+            
+                        <li><a href="/services">Services</a></li>
+            
+
+<!--
+            
+-->
+
+            
+
+            
+          
+        </ul>
+      
+        <ul class="nav navbar-nav navbar-right  ">
+                        <li><a href="/keywords">Type keyword:</a></li>
+            
+
+<!--
+            
+-->
+
+            
+
+            
+          
+            
+
+<!--
+            
+-->
+
+            
+              <li><form id="search_form">
+                     <input id="search_box" type="text" data-provide="typeahead" data-items="4" aria-label="Enter your search term">
+                  </form>
+              </li>
+            
+
+            
+                        <li><a href="/archive">Archive</a></li>
+            
+
+<!--
+            
+-->
+
+            
+
+            
+                        <li><a href="/about">About</a></li>
+            
+
+<!--
+            
+-->
+
+            
+
+            
+          
+            
+
+<!--
+            
+-->
+
+            
+
+            
+              <li><a href="/atom" rel="alternate" type="application/atom+xml"><img src="img/feed-icon16x16.png" id="atom-icon" alt="Atom feed" /></a></li>
+            
+          
+        </ul>
+      
+    </div>
+  </div>
+</nav>
+
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-2" id="left-column">
+
+            
+         
+            <div class="category_img">
+               <a href="/"><img src="img/code_maven_128.png" alt="Code Maven" title="Code Maven" /></a>
+            </div>
+         
+      
+
+
+      
+<div id="series">
+  <a href="jenkins.html">Jenkins</a>
+  <span class="glyphicon glyphicon-ok"></span>
+  <hr>
+  <ol>
+  
+    <li>Installations
+      <ol>
+        
+          <li>
+            <a  href="Install Jenkins on Ubuntu.html">Install Jenkins on Ubuntu</a>
+            
+          </li>
+        
+          <li>
+            <a  href="vagrant-for-jenkins-on-ubuntu.html">Vagrant for Jenkins on Ubuntu</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-in-docker.html">Running Jenkins in Docker</a>
+            
+          </li>
+        
+      </ol>
+    </li>
+  
+    <li>Examplesf
+      <ol>
+        
+          <li>
+            <a  href="jenkins-pipeline-hello-world.html">Jenkins Pipeline - Hello World</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-running-external-programs.html">Jenkins Pipeline: running external programs with sh or bat</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-send-email-notifications.html">Jenkins Pipeline: Send e-mail notifications</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-short-text.html">Jenkins Pipeline: Add some text to the job using manager.addShortText</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-cli-create-node.html">Jenkins CLI: create node</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-builduser.html">Jenkins Pipeline BuildUser plugin</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-environment-variables.html">Jenkins Pipeline - set and use environment variables</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-git-check-out-using-reference.html">Jenkins Pipeline: git checkout using reference to speed up cloning large repositories</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-report-failed-stage-name.html">Jenkins report the name of the stage that failed</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-triggers.html">Jenkins triggers: Periodic polling</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-set-job-name-and-description.html">How to set the job number and description for a Jenkinsfile in a Jenkins Pipeline?</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-readfile-writefile.html">Jenkins Pipeline: read a file and write a file - readFile, writeFile</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-separate-jobs-for-development-and-production.html">Jenkins: separate jobs for development and production</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-get-current-user.html">Jenkins pipeline: get current user</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-parameters.html">Jenkins Pipeline parameters</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-arbitrary-code-execution.html">Jenkins pipelines: Arbitrary code execution in the shell</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-parallel-stages.html">Jenkins pipeline: parallel stages</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-collect-exit-code-from-external-commands.html">Jenkins Pipeline: Collect exit code from external commands</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-get-previous-build-status.html">Jenkins pipeline: Get previous build status - getPreviousBuild</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-interactive-input-during-process.html">Jenkins pipeline: interactive input during process</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-list-agents-by-name-or-by-label.html">Jenkins pipeline: List agents by name or by label</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-add-badges.html">Jenkins pipeline: add badges</a>
+            
+          </li>
+        
+      </ol>
+    </li>
+  
+  </ol>
+</div>
+
+
+
+    </div>
+    <div class="col-md-7" id="content">
+
+
+
+
+<div id="show_content">
+<h1>Jenkins</h1>
+
+
+
+
+  <div id="indexes">
+    <ul>
+      
+         <li><a class="btn btn-mini btn-primary kw-button" href="/search/Jenkins">Jenkins</a></li>
+      
+         <li><a class="btn btn-mini btn-primary kw-button" href="/search/Devops">Devops</a></li>
+      
+    </ul>
+  </div>
+
+
+
+<div class="prev-next">
+<h2>
+
+
+
+  <span class="label label-lg label-success next">
+    <a href="Install Jenkins on Ubuntu.html" title="Install Jenkins on Ubuntu">Next <span class="glyphicon glyphicon-chevron-right"></span> </a>
+  </span>
+</h2>
+</div>
+
+
+
+
+
+<div role="main" id="main">
+
+  <div id="top-poster"></div>
+
+  <div id="abstract">
+    
+    <div id="abstract_text"> <p>
+<a href="https://jenkins.io/">Jenkins</a> is an automation server. It allows for all kinds of automations. It is primarily used for Build automation, Continuous Integration, and Continuous Deployment.
+<p>
+</div>
+  </div>
+  <div id="after-abstract"></div>
+  
+  <p>
+<h2>Installations</h2>
+<p>
+<ol>
+    <li><a href="Install Jenkins on Ubuntu.html">Install Jenkins on Ubuntu</a> (using Vagrant)</li>
+    <li><a href="vagrant-for-jenkins-on-ubuntu.html">Vagrant for Jenkins on Ubuntu</a></li>
+    <li><a href="jenkins-in-docker.html">Jenkins in Docker</a></li>
+</ol>
+<p>
+<h2>Examples</h2>
+<p>
+<ol>
+    <li><a href="jenkins-pipeline-hello-world.html">Jenkins Pipeline - Hello World</a> (pipeline, agent, stages, stage, stpes, echo)</li>
+    <li><a href="jenkins-pipeline-running-external-programs.html">Jenkins Pipeline: running external programs with sh or bat</a>, returnStdout, trim</li>
+    <li><a href="jenkins-send-email-notifications.html">Jenkins Pipeline: Send e-mail notifications</a></li>
+    <li><a href="jenkins-pipeline-short-text.html">Jenkins Pipeline: Add some text to the job using manager.addShortText</a></li>
+    <li><a href="jenkins-cli-create-node.html">Jenkins CLI: create node</a></li>
+    <li><a href="jenkins-pipeline-builduser.html">Jenkins Pipeline BuildUser plugin</a></li>
+    <li><a href="jenkins-pipeline-environment-variables.html">Jenkins Pipeline - set and use environment variables</a></li>
+    <li><a href="jenkins-git-check-out-using-reference.html">Jenkins Pipeline: git checkout using reference to speed up cloning large repositories</a></li>
+    <li><a href="jenkins-report-failed-stage-name.html">Jenkins report the name of the stage that failed</a> (STAGE_NAME)</li>
+    <li><a href="jenkins-triggers.html">Jenkins Pipeline: triggers from Version Control Systems</a> (pollSCM)</li>
+    <li><a href="jenkins-pipeline-set-job-name-and-description.html">How to set the job number and description for a Jenkinsfile in a Jenkins Pipeline?</a> (currentBuild, displayName, description)</li>
+    <li><a href="jenkins-readfile-writefile.html">Jenkins Pipeline: read a file, write a file - readFile, writeFile</a></li>
+    <li><a href="jenkins-separate-jobs-for-development-and-production.html">Separate jobs for development and production</a> currentBuild, projectName</li>
+    <li><a href="jenkins-get-current-user.html">Jenkins pipeline: get current user</a> (currentBuild, getBuildCauses)</li>
+    <li><a href="jenkins-pipeline-parameters.html">Jenkins parameters</a></li>
+    <li><a href="jenkins-arbitrary-code-execution.html">Arbitrary code execution in the shell</a> (sh, parameters)</li>
+    <li><a href="jenkins-pipeline-parallel-stages.html">Jenkins pipeline: parallel stages</a></li>
+    <li><a href="jenkins-pipeline-collect-exit-code-from-external-commands.html">Jenkins Pipeline: Collect exit code from external commands</a> (sh, bat, returnStatus)</li>
+    <li><a href="jenkins-pipeline-get-previous-build-status.html">Jenkins pipeline: Get previous build status - currentBuild, getPreviousBuild</a></li>
+    <li><a href="jenkins-pipeline-interactive-input-during-process.html">Jenkins pipeline: interactive input during process</a> (input)</li>
+    <li><a href="jenkins-pipeline-list-agents-by-name-or-by-label.html">Jenkins pipeline: List agents by name or by label</a></li>
+    <li><a href="jenkins-pipeline-add-badges.html">Jenkins pipeline: add badges</a></li>
+    <li>Report failures.</li>
+    <li>Send alerts</li>
+    <li>Collect test coverage data.</li>
+    <li><a href="slides/jenkins/">Jenkins slides</a></li>
+    <li><a href="jenkins-pipeline-unicode.html">Jenkins printing Unicode characters</a></li>
+</ol>
+<p>
+<h2>Run external code, capture output</h2>
+<p>
+<pre class="linenums">
+script {
+      v = sh(script: 'echo " 42"; echo', returnStdout: true).trim()
+      echo v
+      echo "a${v}b"
+}
+</pre>
+<p>
+<span class="inline_code">bat</span> for windows.
+<p>
+<h2>catch and print error in jenkins</h2>
+<p>
+jenkins exception try - catch
+<p>
+https://fraaargh.wordpress.com/2018/06/20/get-a-jobs-console-logfile-from-a-jenkins-pipeline/
+<p>
+<pre class="linenums">
+pipeline {
+   agent none
+   stages {
+       stage ('Catch crash') {
+           agent { label 'master'}
+           steps {
+               echo "before crash"
+               script {
+                   try {
+                       sh 'exit 1'
+                   } catch (err) {
+                       echo "exception caught, going on"
+                       println err // java.lang.ClassCastException:
+org.jenkinsci.plugins.workflow.steps.EchoStep.message expects class java.lang.String but received
+class hudson.AbortException
+                   }
+               }
+               echo "after crash"
+           }
+       }
+       stage ('Continue after crash') {
+           agent { label 'master'}
+           steps {
+               echo "stage after crash"
+           }
+       }
+   }
+}
+</pre>
+<p>
+<pre class="linenums">
+                    try {
+                        //sh "ls -l no_such"
+                        a = 10
+                        b = 0
+                        c = a/b
+                    }
+                    catch(Exception ex) {
+                         //currentBuild.result = 'FAILURE'
+                        println("exception")
+                        println(ex) // hudson.AbortException: script returned exit code 2
+                        println(ex.toString())
+                        println(ex.getMessage())
+                        println(ex.getStackTrace())
+                    }
+</pre>
+<p>
+<p>
+<h2>dir and tmp are problematic</h2>
+<p>
+<pre class="linenums">
+  stages {
+       stage ('Run external exe') {
+           agent { label 'master'}
+           steps {
+               sh 'pwd'
+               dir('/tmp/gabor') {
+                   echo "inside"
+                   sh 'pwd'
+                   //sh 'sudo ./do-something.py'
+               }
+               sh 'pwd'
+               //sh "sudo sh -c 'cd /tmp; ./do-something.py; cd -'"
+           }
+       }
+</pre>
+<p>
+<b>examples/jenkins/mkdir_exception.txt</b><br><pre>
+java.io.IOException: Failed to mkdirs: /tmp@tmp/durable-e569697c
+        at hudson.FilePath.mkdirs(FilePath.java:1170)
+        at org.jenkinsci.plugins.durabletask.FileMonitoringTask$FileMonitoringController.&lt;init&gt;(FileMonitori
+ngTask.java:156)
+        at org.jenkinsci.plugins.durabletask.BourneShellScript$ShellController.&lt;init&gt;(BourneShellScript.java
+:198)
+        at org.jenkinsci.plugins.durabletask.BourneShellScript$ShellController.&lt;init&gt;(BourneShellScript.java
+:190)
+        at org.jenkinsci.plugins.durabletask.BourneShellScript.launchWithCookie(BourneShellScript.java:111)
+        at org.jenkinsci.plugins.durabletask.FileMonitoringTask.launch(FileMonitoringTask.java:86)
+        at org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep$Execution.start(DurableTaskStep
+.java:182)
+        at org.jenkinsci.plugins.workflow.cps.DSL.invokeStep(DSL.java:229)
+        at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)
+        at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:122)
+        at sun.reflect.GeneratedMethodAccessor1989.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+        at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+        at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
+        at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
+        at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)
+        at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+        at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+        at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:157)
+        at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)
+        at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterc
+eptor.java:133)
+        at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)
+        at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:159)
+        at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:129)
+        at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:129)
+        at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)
+        at WorkflowScript.run(WorkflowScript:16)
+
+</pre>
+<p>
+<h2>Jenkins / Groovy -  define functions and call them with parameters</h2>
+<p>
+<pre class="linenums">
+def report(status) {
+   println "status=${status}"
+}
+</pre>
+<p>
+and call them
+<p>
+<pre class="linenums">
+report("text")
+</pre>
+<p>
+<h2>Environment variables on Linux</h2>
+<p>
+<pre class="linenums">
+sh 'printenv'
+sh 'env'
+</pre>
+<p>
+<h2>git Backup</h2>
+<p>
+<a href="https://gist.github.com/cenkalti/5089392">gist</a>
+<p>
+<p>
+<h2>Other</h2>
+<p>
+<pre class="linenums">
+echo bat(returnStdout: true, script: 'set')
+
+build(job: 'RevertServerAutomationCloud', parameters: [
+     string(name: 'VM_SNAPSHOT', value: 'CleanDb')
+])
+</pre>
+<p>
+how to include one jenkinsfile in another one?
+<p>
+how to avoid repetititon?
+<p>
+<p>
+<pre class="linenums">
+stage('Revert agent 100')
+         {
+             steps
+                     {
+                     }
+         }
+
+ stage('Revert agent 102')
+         {
+             steps
+                     {
+
+                     }
+         }
+</pre>
+<p>
+how do try - catch and repeat interact?
+<p>
+<pre class="linenums">
+vSphere buildStep: [$class: 'RevertToSnapshot', snapshotName: "${params.VM_SNAPSHOT}", vm: "${params.VM_NAME}"], serverName: '192.168.1.1'
+
+httpRequest authentication: 'df8-b86d-3272', consoleLogResponseBody: true, httpMode: 'POST', ignoreSslErrors: true, responseHandle: 'NONE', url:
+"http://192.168.1.1:8080/computer/${params.AGENT_NAME}/doDisconnect?offlineMessage=bye", validResponseCodes: '100:404'
+</pre>
+<p>
+<p>
+<h2>Active Choices Parameter</h2>
+<p>
+<b>examples/jenkins/array_list.txt</b><br><pre>
+try {
+   List&lt;String&gt; subnets = new ArrayList&lt;String&gt;()
+   def subnetsRaw = "gcloud compute networks subnets list --project=${GCE_PROJECT} --network=corp-development --format=(NAME)".execute().text
+   for (subnet in  subnetsRaw.split()) {
+       subnets.add(subnet)
+   }
+   return subnets
+} catch (Exception e) {
+   print e
+   print "There was a problem fetching the artifacts"
+}
+
+</pre>
+<p>
+<h2>Options</h2>
+<p>
+<pre class="linenums">
+   options {
+       ansiColor('xterm')
+       timestamps()
+   }
+</pre>
+<p>
+<h2>Scripts</h2>
+<p>
+<strong>Scripts not permitted to use method groovy.lang.GroovyObject invokeMethod java.lang.String java.lang.Object
+(org.jenkinsci.plugins.workflow.cps.EnvActionImpl keys). Administrators can decide whether to approve or reject this
+signature.</strong>
+<p>
+<p>
+<h2>archiveArtifacts can be called multiple times</h2>
+<p>
+<pre class="linenums">
+archiveArtifacts artifacts: 'mydata.json', onlyIfSuccessful: true
+writeJSON(file: 'otherfile.log', json: data, pretty: 4)
+archiveArtifacts artifacts: '*.log', onlyIfSuccessful: true
+</pre>
+<p>
+<p>
+<h2>Environment variable values must either be single quoted, double quoted, or function calls.</h2>
+<p>
+They cannot be earlier defined environment variables or parameter values.
+We can however overcome this limitation by calling a function and passing the values to it.
+<p>
+<b>examples/jenkins/exceptions.jenkinsfile</b><br><pre class="prettyprint linenums ">
+pipeline {
+   agent none
+   options {
+       ansiColor('xterm')
+       timestamps()
+   }
+   parameters {
+       string(name: 'machine', defaultValue: 'asos', description: 'Some text input')
+       string(name: 'size',   defaultValue: '23', description: 'Some number input')
+   }
+   environment {
+       answer = 42
+       // machine_name = params.machine  // -&gt; Environment variable values must either be single quoted, double quoted, or function calls.
+       machine_name = set_machine_name(params.machine)
+   }
+   stages {
+       stage('try') {
+           agent { label 'master' }
+           steps {
+               script {
+                   sh "hostname"
+                   print("params.machine=${params.machine}")
+                   print("params.size=${params.size}")
+                   print("env.answer=${env.answer}")
+                   print("env.machine_name=${env.machine_name}")
+
+               }
+           }
+       }
+       stage('try-agent') {
+           agent { label 'jenkins-simple-agent' }
+           steps {
+               script {
+                   sh "hostname"
+               }
+           }
+       }
+   }
+}
+
+def set_machine_name(value) {
+   return value
+}
+
+
+</pre>
+<p>
+<h2>Jenkins environment</h2>
+<p>
+Even if there is an exception in the environment section Jenkins will still run the "success" part of the post section.
+Same problem if there is an exception on one of the functions.
+<p>
+To overcome this we create an environment variable as the last step in the environment section
+and then we check that variable using
+<p>
+if (! binding.hasVariable('environment_is_set')) {
+       error("Environment failed to set properly")
+}
+<p>
+<p>
+That does not help in case there is an exception in the functions.
+<p>
+<p>
+<p>
+<h2>http_request</h2>
+<p>
+<pre class="linenums">
+response = httpRequest discovery_url
+println response
+config_str = response.getContent()
+for (item in config.sources) {
+  item.value
+  item.key
+</pre>
+<p>
+<h2>Sending e-mail problem fixed</h2>
+<p>
+https://stackoverflow.com/questions/20188456/how-to-change-the-security-type-from-ssl-to-tls-in-jenkins
+<p>
+* Sending e-mail
+ In Manage Jenkins - Configure System in the
+    Extended mail section set the
+       SMTP:  smtp.office365.com
+       Domain name: @company.com
+         Advanced:
+             Use SMTP Authentication: +
+             User Name: cicdserver@company.com
+             Password:              SMTP port: 587
+    E-mail notification section:
+        SMTP server: smtp.office365.com
+    Default user e-mail suffix: @company.com
+        Advanced
+              User Name: cicdserver@company.com
+              Password:               SMTP port: 587
+<p>
+<p>
+ Shut down Jenkins (via the Windows services)
+ Open the file: C:\Program Files (x86)\Jenkins\jenkins.xml
+ and change the arguments line to be:
+<p>
+<b>examples/jenkins/arguments.txt</b><br><pre>
+&lt;arguments&gt;-Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle  -Dmail.smtp.starttls.enable=true -jar
+"%BASE%\jenkins.war" --httpPort=8080 --webroot="%BASE%\war"&lt;/arguments&gt;
+
+</pre>
+<p>
+ (specifically add:  -Dmail.smtp.starttls.enable=true  )
+ Then start Jenkins again.
+<p>
+<p>
+Client was not authenticated to send anonymous mail
+Error sending to the following VALID addresses
+<p>
+<b>examples/jenkins/variables.Jenkinsfile</b><br><pre class="prettyprint linenums ">
+pipeline {
+   agent none
+   stages {
+       stage('try') {
+           agent { label 'master' }
+           steps {
+               script {
+                   //some_strange_name = null
+                   //print(some_strange_name)
+                   if (true) {
+                       print("creating variable")
+                       some_strange_name = 1
+                   }
+                   print(some_strange_name)
+
+                   if (binding.hasVariable('some_strange_name')) {
+                       print("has some_strange_name")
+                       print(some_strange_name)
+                   } else {
+                       print("DOES NOT have some_strange_name")
+                   }
+               }
+           }
+       }
+       stage('try again') {
+           agent { label 'master' }
+           steps {
+               script {
+                   if (binding.hasVariable('some_strange_name')) {
+                       print("has some_strange_name")
+                       print(some_strange_name)
+                   } else {
+                       print("DOES NOT have some_strange_name")
+                   }
+               }
+           }
+       }
+   }
+}
+
+</pre>
+<p>
+<p>
+<h2>Skip steps</h2>
+<p>
+Jenkins pipeline stop early with success
+How to indicate that a job is successful
+<a href="https://stackoverflow.com/questions/37690920/jenkins-pipeline-conditional-step-stage">pipeline conditional step stage</a>
+<p>
+<b>examples/jenkins/skip_step.Jenkinsfile</b><br><pre class="prettyprint linenums ">
+pipeline {
+   agent none
+   options {
+       ansiColor('xterm')
+       timestamps()
+   }
+   parameters {
+       booleanParam(defaultValue: false, description: 'Checkbox', name: 'yesno')
+   }
+   stages {
+       stage('first') {
+           agent { label 'master' }
+           steps {
+               script {
+                   println("first before")
+                   println(params.yesno)
+                   done = true
+                   return
+                   println("first after")
+               }
+           }
+       }
+       stage('second') {
+           agent { label 'master' }
+           when {
+               expression {
+                  return ! done;
+               }
+           }
+           steps {
+               script {
+                   println("second")
+               }
+           }
+       }
+   }
+}
+
+</pre>
+<p>
+<b>examples/jenkins/worker_job.Jenkinsfile</b><br><pre class="prettyprint linenums ">
+import java.text.SimpleDateFormat
+pipeline {
+   agent none
+   options {
+       ansiColor('xterm')
+       timestamps()
+   }
+   parameters {
+       string(name: 'machine', defaultValue: '', description: 'Name of the machine')
+       string(name: 'size',   defaultValue: '23', description: 'The size')
+       choice(choices: ['Mercury', 'Venus', 'Earth', 'Mars'], description:  'Pick a planet', name: 'planet')
+   //}
+   stages {
+       stage('try') {
+           agent { label 'master' }
+           steps {
+               script {
+                   sh "hostname"
+
+                   def data = readJSON text: '{}'
+                   data.name = "test-529" as String
+                   data.date = new java.text.SimpleDateFormat('yyyyMMddHHmmss').format(new Date())
+                   writeJSON(file: 'mydata.json', json: data, pretty: 4)
+                   archiveArtifacts artifacts: 'mydata.json', onlyIfSuccessful: true
+
+                   //error("Fail after first artifact")
+
+                   writeJSON(file: 'otherfile.log', json: data, pretty: 4)
+                   archiveArtifacts artifacts: '*.log', onlyIfSuccessful: true
+               }
+           }
+       }
+   }
+}
+
+</pre>
+<p>
+<p>
+<h2>jenkins sh commnad fails - jenkins stops</h2>
+<p>
+<b>examples/jenkins/sh_fails.jenkinsfile</b><br><pre class="prettyprint linenums ">
+pipeline {
+   agent { label 'master' }
+   stages {
+       stage('only') {
+           steps {
+               println("one")
+               sh "ls -l"
+               println("two")
+               sh "ls -l no_such"
+               println("three")
+           }
+       }
+   }
+}
+
+</pre>
+<p>
+<p>
+<p>
+<h2>Repository branch filter for Git</h2>
+<p>
+It will start multiple jobs if more than one branch was pushed out.
+It is triggered even if there were no new commits in the branch that was pushed out
+<p>
+By default it will run every branch matching the filter, even if that branch was last changed 2 years ago.
+This can be a problem if for some reason your have hundreds or thousands of historical branches.
+<p>
+<pre class="linenums">
+:^origin/(work|dev)-.*
+</pre>
+<p>
+You can limit this by selecting another option and setting the ancestry date to limit how many days
+you are ready to go back in time.
+<p>
+<ul>
+    <li>Strategy for choosing what to build</li>
+    <li>Choosing strategy: Ancestry</li>
+    <li>Maximum Age of Commit: 1</li>
+</ul>
+<p>
+In a pipeline
+<p>
+<b>examples/jenkins/branch_filter_age_limit.jenkinsfile</b><br><pre class="prettyprint linenums ">
+
+checkout([
+    $class: 'GitSCM',
+    branches: [[name: '*/master']],
+    doGenerateSubmoduleConfigurations: false,
+    extensions: [[
+        $class: 'BuildChooserSetting',
+        buildChooser: [$class: 'AncestryBuildChooser', ancestorCommitSha1: '', maximumAgeInDays: 1]
+    ]],
+    submoduleCfg: [],
+    userRemoteConfigs: [[]]
+])
+</pre>
+<p>
+<h2>Jenkins Pipeline code reuse</h2>
+<p>
+https://cleverbuilder.com/articles/jenkins-shared-library/
+https://jenkins.io/doc/book/pipeline/shared-libraries/
+<p>
+<h2>Exceptions</h2>
+<p>
+When you encounter one of those 40-lines long Java stack-traces, look for <b>WorkflowScript</b> to locate the source of the problem.
+<p>
+<b>examples/jenkins/exception_catching.jenkinsfile</b><br><pre class="prettyprint linenums ">
+pipeline {
+    agent { label 'master' }
+    stages {
+        stage('only') {
+            steps {
+                script {
+                    println("one")
+                    sh "ls -l"
+                    println("two")
+
+                    try {
+                        //sh "ls -l no_such"
+                        a = 10
+                        b = 0
+                        c = a/b
+
+                    }
+                    catch(Exception ex) {
+                         //currentBuild.result = 'FAILURE'
+                        println("exception")
+                        println(ex) // hudson.AbortException: script returned exit code 2
+                        println(ex.toString())
+                        println(ex.getMessage())
+                        println(ex.getStackTrace())
+                    }
+
+                    //} catch(ArrayIndexOutOfBoundsException ex) {
+                    //println("Catching the Array out of Bounds exception");
+                    //}catch(Exception ex) {
+
+                    println("three")
+                    is_it_the_answer(42)
+                    echo "try again"
+                    is_it_the_answer(23)
+                }
+            }
+        }
+        stage('second') {
+            steps {
+                script {
+//                    if (manager.logContains("three")) {
+//                        manager.addWarningBadge("tres")
+//                    } else {
+//                        manager.addWarningBadge("nem harom")
+//                    }
+
+                }
+            }
+        }
+    }
+}
+
+def is_it_the_answer(n) {
+    if (n == 42) {
+        return 'yes'
+    }
+    throw new Exception('Nope')
+}
+
+
+                    try {
+                        is_it_the_answer(23)
+                    } catch (err) {
+                        print(err)
+                        print(err.getMessage())
+                    }
+
+
+
+</pre>
+<p>
+<h2>Jenkins parse console output</h2>
+<p>
+<p>
+The <b>logContains</b> can parse the log created be the previous stages (but not the current stage)
+It can also be used in a post-action.
+<p>
+"manager" is org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder$BadgeManager@41fe3861
+<p>
+<a href="https://wiki.jenkins.io/display/JENKINS/Groovy+Postbuild+Plugin">Postbuild plugin</a>
+<p>
+<b>examples/jenkins/parse_console_output.jenkinsfile</b><br><pre class="prettyprint linenums ">
+        stage('second') {
+            steps {
+                script {
+                    if (manager.logContains("three")) {
+                        manager.addWarningBadge("drei")
+                    } else {
+                        manager.addWarningBadge("kein drei")
+                    }
+                }
+            }
+        }
+
+
+         print("A disk image was created: zorg-1552278641")
+
+         def matcher = manager.getLogMatcher(/.* (zorg-\d+).*/)
+         print(matcher)
+         if (matcher?.matches()) {
+             def image_name = matcher.group(1)
+             print(image_name)
+             manager.addShortText(image_name)
+         }
+
+
+</pre>
+<p>
+<h2>readJSON</h2>
+<p>
+<a href="https://stackoverflow.com/questions/46841877/java-lang-nosuchmethoderror-no-such-dsl-method-readjson">no such dsl method</a>
+<p>
+<h2>jenkins build step</h2>
+<p>
+https://jenkins.io/doc/pipeline/steps/pipeline-build-step/
+<p>
+jenkins collect status from invoked jobs
+<p>
+<b>examples/jenkins/status_from_build.Jenkinsfile</b><br><pre class="prettyprint linenums ">
+
+pipeline {
+    agent { label 'master' }
+    stages {
+        stage('only') {
+            steps {
+                script {
+                    println("BEFORE")
+                    results = []
+                    try {
+                        def result = build job: "experiment-subproject", wait: true
+                        println(result) // org.jenkinsci.plugins.workflow.support.steps.build.RunWrapper
+                        println(result.getId())
+                    } catch(err) {
+                        println("ERROR caught")
+                        println(err) // hudson.AbortException: experiment-subproject #4 completed with status FAILURE (propagate: false to ignore)
+                        // https://javadoc.jenkins-ci.org/hudson/AbortException.html
+                        println(err.getMessage())
+                        println(err.getStackTrace())
+                        println(err.getCause())
+                        println(err.getLocalizedMessage())
+                        println(err.toString())
+                    }
+                    println("AFTER")
+
+                    def res = build job: "experiment-subproject", wait: false
+                    println(res) // null
+
+                    rep = build job: "experiment-subproject", wait: true, propagate: false
+                    println(rep) // org.jenkinsci.plugins.workflow.support.steps.build.RunWrapper
+                    println(rep.getId())
+                    println(rep.getResult()) // FAILURE
+                    println(rep.getDurationString())
+                    results.push(rep)
+
+                    //sh "ls -l"
+                    //println("two")
+                    //} catch(ArrayIndexOutOfBoundsException ex) {
+                    //println("Catching the Array out of Bounds exception");
+                    //}catch(Exception ex) {
+
+                    //println("three")
+                    //print("A disk image was created: jenkins-agent-1554 and then more")
+                    //is_it_the_answer(42)
+                    //echo "try again"
+                    //try {
+                    //    is_it_the_answer(23)
+                    //} catch (err) {
+                    //   print(err)
+                    //    print(err.getMessage())
+                    //}
+                }
+            }
+        }
+        stage('second') {
+            steps {
+                script {
+                    echo "hi"
+                    println(rep.getId())
+                    println(rep.getResult()) // FAILURE
+                    println(rep.getProjectName())
+                    println(rep.getDisplayName())
+
+                    def res = build job: "experiment-subproject", wait: true, propagate: false
+                    results.push(res)
+
+//                    if (manager.logContains("three")) {
+//                        manager.addWarningBadge("tres")
+//                    } else {
+//                        manager.addWarningBadge("nem harom")
+//                    }
+                    //def image_name = ''
+                    //def matcher = manager.getLogMatcher(/.* (jenkins-agent-(\d+)).*/)
+                    //print(matcher)
+                    //if (matcher?.matches()) {
+                    //    image_name = matcher.group(1)
+                    //    println(image_name)
+                    //    manager.addShortText(image_name)
+                    //    println(image_name.getClass())
+                    //}
+                    //do_sg(image_name)
+                }
+            }
+        }
+        stage ('gitz') {
+            agent { label 'build-small' }
+            steps {
+                script {
+                    results.each {
+                         println(it)
+                         println(it.getId())
+                         println(it.getResult()) // FAILURE
+                         println(it.getProjectName())
+                         println(it.getAbsoluteUrl())
+                    }
+                }
+            }
+        }
+    }
+}
+
+def is_it_the_answer(n) {
+    if (n == 42) {
+        return 'yes'
+    }
+    throw new Exception('Nope')
+}
+
+def do_sg(name) {
+    print("do_sg with $name")
+}
+</pre>
+<p>
+<h2>links</h2>
+<p>
+https://jenkins.io/doc/pipeline/steps/
+<p>
+https://jenkins.io/doc/pipeline/steps/pipeline-build-step/#-build-%20build%20a%20job
+<p>
+https://jenkins.io/doc/pipeline/steps/pipeline-input-step/
+<p>
+<p>
+<pre class="linenums">
+               script {
+                    manager.addShortText("\n${params.cluserName}", "black", "yellow", "0px", "white")
+                    manager.addShortText("${params.clusterId}-${params.command}", "black", "lightgreen", "0px", "white")
+                    manager.addShortText("${params.services}", "black", "AliceBlue", "0px", "white")
+                    if (params.usage) {
+                        manager.addShortText("${params.usage}", "DimGray", "AliceBlue", "0px", "white")
+                    }
+                }
+</pre>
+<p>
+<p>
+<h2>Elapsed time</h2>
+<p>
+<b>examples/jenkins/elapsed_time.Jenkinsfile</b><br><pre class="prettyprint linenums ">
+import groovy.time.TimeCategory
+import groovy.time.TimeDuration
+
+pipeline {
+    agent { label 'master' }
+    stages {
+        stage('first') {
+            steps {
+                script {
+                    start = new Date()
+                    echo "in first"
+                }
+            }
+        }
+        stage('second') {
+            steps {
+                script {
+                    echo "in second"
+                }
+            }
+        }
+    }
+    post {
+        always {
+            echo "in post always"
+            script {
+                def stop = new Date()
+                TimeDuration td = TimeCategory.minus( stop, start )
+                println("Elapsed time: $td")
+            }
+
+        }
+        failure {
+            echo "in post failure"
+        }
+    }
+}
+
+</pre>
+<p>
+<p>
+<h2>Serialize regex</h2>
+<p>
+After a regex matching Jenkins sometimes wants to serialize the object, but it cannot do it and thus is raises an
+exception. (I have not yet figured out when does this happen.)
+<p>
+<b>examples/jenkins/serialize_regex.Jenkinsfile</b><br><pre class="prettyprint linenums ">
+pipeline {
+    agent { label 'master' }
+    stages {
+        stage('first') {
+            steps {
+                script {
+                    echo "in first"
+                    def text = """This is some long test
+                    with more than 1
+                    rows.
+                    """
+                    def match = (text =~ /\bsome\b/)
+                    println("still first")
+                    check_me()
+                }
+            }
+        }
+        stage('second') {
+            steps {
+                script {
+                    echo "in second"
+                }
+            }
+        }
+    }
+    post {
+        always {
+            echo "in post always"
+        }
+        failure {
+            echo "in post failure"
+        }
+    }
+}
+
+def check_me() {
+    println("in check")
+    def text = """This is some long test
+        with more than 1
+        rows.
+    """
+    def match = (text =~ /\bsome\b/)
+}
+
+
+</pre>
+<p>
+<h2>Send mail</h2>
+<p>
+<pre class="linenums">
+emailext (
+    subject: "Test by Gabor",
+    body: "Test from Gabor",
+    to: 'foo@bar.com',
+    from: 'jenkins-noreply@example.com',
+    listId: 'gabor-experimental',
+)
+</pre>
+<p>
+<p>
+<h2>Jenkins - check if host is accessible</h2>
+<p>
+<b>examples/jenkins/ping_host.jenkinsfile</b><br><pre class="prettyprint linenums ">
+// catch exception
+// stop process early reporting failure
+
+pipeline {
+    agent { label 'master' }
+    parameters {
+       string(name: 'hostname', defaultValue: 'gabor-dev', description: 'Hostname or IP address')
+    }
+    stages {
+        stage('first') {
+            steps {
+                script {
+                    echo "Checking $params.hostname"
+                    try {
+                        sh("ping -c 1 $params.hostname")
+                    }  catch(Exception e) {
+                       println("Exception: ${e}")
+                       error("Could not find host $params.hostname, is it on?")
+                       return
+                    }
+                    echo "still in first"
+                }
+            }
+        }
+        stage('second') {
+            steps {
+                script {
+                    echo "in second"
+                }
+            }
+        }
+    }
+    post {
+        always {
+            echo "in post always"
+        }
+        failure {
+            echo "in post failure"
+        }
+    }
+}
+
+
+</pre>
+<p>
+<h2>last started stage</h2>
+<p>
+<pre class="linenums">
+//   last_started = env.STAGE_NAME
+</pre>
+<p>
+<h2>Early stop</h2>
+<p>
+jenkins - skip rest of the current stage, early end of current stage  - stop the whole job reporting error
+<p>
+<pre class="linenums">
+return  // skipping rest of the current stage, running next stage
+error("Some error message")  // raise an exception stop the whole job
+</pre>
+<p>
+<h2>currentBuild</h2>
+<p>
+<pre class="linenums">
+echo currentBuild.number  // failed expecting number
+println(currentBuild.number)  // works
+
+println("Number: ${currentBuild.number}")
+println("Result: ${currentBuild.result}")
+println("Display name: ${currentBuild.displayName}")
+</pre>
+<p>
+during the steps the result is null
+in the post section it is already 'SUCCESS' or 'FAILURE'
+<p>
+<a href="https://jenkins.io/doc/book/pipeline/getting-started/">getting started</a>
+<p>
+<p>
+<h2>returnStatus instead of stopping the job</h2>
+<p>
+the exit code
+<p>
+<pre class="linenums">
+def res2 = sh(script: "pwd", returnStatus: true)
+</pre>
+<p>
+<p>
+<h2>Sample code</h2>
+<p>
+<pre class="linenums">
+def errors = ''
+def res = 'SUCCESS'
+def res1 = sh(script: "xyz", returnStatus: true)
+println("res1 ${res1}")
+if (res1 !=0) {
+    res = 'FAILURE'
+    errors += "xyz"
+}
+def res2 = sh(script: "abc", returnStatus: true)
+println("res2: ${res2}")
+if (res2 !=0) {
+    res = 'FAILURE'
+    errors += "abc"
+}
+def res3 = sh(script: "pwd", returnStatus: true)
+println("res3: ${res3}")
+if (res3 !=0) {
+    res = 'FAILURE'
+    errors += "pwd"
+}
+//if (params.expected == 'Success') {
+//    sh "pwd"
+//} else {
+//    sh "xyz"
+//}
+if (res == 'FAILURE') {
+    error(errors)
+</pre>
+<p>
+<p>
+<p>
+<h2>jenkins error, we need to clean the regex variables</h2>
+<p>
+<pre class="linenums">
+def output = sh(...)
+def version = (output =~ /Version\s*:\s*([\d.]+)/)
+def build_number = (output =~ /Build number\s*:\s*([\d]+)/)
+currentBuild.description = "${version[0][1]} - ${build_number[0][1]}&lt;br>"
+version = ""
+build_number = ""
+</pre>
+<p>
+<p>
+<h2>Optional artifacts</h2>
+<p>
+<pre class="linenums">
+post {
+    always {
+        script {
+            archiveArtifacts artifacts: 'screenshots/*', fingerprint: true, allowEmptyArchive: true
+        }
+    }
+}
+</pre>
+<p>
+<a href="https://www.jenkins.io/doc/pipeline/steps/core/">archiveArtifacts</a>
+<p>
+<p>
+<a href="https://stackoverflow.com/questions/34594703/add-build-parameter-in-jenkins-build-schedule">schedule</a>
+<p>
+<p>
+<h2>multiple cron with parameter</h2>
+<p>
+<b>examples/jenkins/multiple_cron.Jenkinsfile</b><br><pre class="prettyprint linenums ">
+
+// multiple cron with parameter
+
+// There is a plugin and this experiment
+
+    triggers {
+        cron("35,36 * * * *")
+    }
+
+    stages {
+        stage('Check disk usage') {
+            steps {
+                script {
+                    echo "--------------"
+                    echo "HELLO $BUILD_NUMBER"
+                    echo "--------------"
+                    String[] ENVS   = ["env1", "env3"]
+                    def ENV_COUNT   = ENVS.length
+                    def x           = BUILD_NUMBER.toInteger() % ENV_COUNT
+                    echo x.toString()
+                    echo ENVS[x]
+
+</pre>
+
+
+  <div id="after-content"></div>
+</div>
+
+
+
+
+<div class="prev-next">
+<h2>
+
+
+
+  <span class="label label-lg label-success next">
+    <a href="Install Jenkins on Ubuntu.html" title="Install Jenkins on Ubuntu">Next <span class="glyphicon glyphicon-chevron-right"></span> </a>
+  </span>
+</h2>
+</div>
+
+
+
+<hr>
+<div id="creators">
+   
+
+      
+        <img src="img/szabgab.png" alt="Gabor Szabo" />
+<!--
+        Gábor who writes the articles of the Code Maven site offers <a href="/courses">courses</a> in in the subjects
+that are discussed on this web site.
+<p>
+Gábor helps companies set up <b>test automation</b>, CI/CD
+<b>Continuous Integration</b> and <b>Continuous Delivery</b> and other <b>DevOps</b> related
+systems. Gabor can help your team improve the development speed and reduce the risk of bugs.
+<p>
+He is also the author of a number of <a href="https://leanpub.com/u/szabgab">eBooks</a>.
+<p>
+<a href="https://szabgab.com/contact.html">Contact Gabor</a> if you'd like to hire his services.
+<p>
+If you would like to <b>support</b> his freely available work, you can do it via
+<a href="https://www.patreon.com/szabgab">Patreon</a>, <a href="https://github.com/sponsors/szabgab/">GitHub</a>,
+or <a href="https://paypal.me/szabgab">PayPal</a>.
+
+
+-->
+        <div class="author_text">
+           Written by<br>
+           
+             <a href="https://www.linkedin.com/in/szabgab/">Gabor Szabo</a>
+           
+        </div>
+      
+
+   
+</div>
+
+
+
+
+  <hr>
+  <p>
+  Published on 2018-03-24
+  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+  If you have any comments or questions, feel free to post them on the source of this page in GitHub. <a href="https://github.com/szabgab/code-maven.com/tree/main/sites/en/pages//jenkins.txt">Source on GitHub.</a>
+  <a href="https://github.com/szabgab/code-maven.com/issues/new?title=&body=https://code-maven.com/jenkins">Comment on this post</a>
+</div>
+</div>
+
+    </div>
+
+<div id="modal"></div>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CB0RC0YM71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CB0RC0YM71');
+</script>
+
+
+
+
+
+</body>
+</html>
+
+
+

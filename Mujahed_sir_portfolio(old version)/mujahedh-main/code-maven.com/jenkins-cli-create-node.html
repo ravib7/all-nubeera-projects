@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <link rel="canonical" href="https://code-maven.com/jenkins-cli-create-node" />
+
+  <link rel="prev" href="jenkins-pipeline-short-text.html">
+  <link rel="next" href="jenkins-pipeline-builduser.html">
+
+  <link href="/atom" rel="alternate" type="application/atom+xml" title ="Code Maven" />
+
+  <script>
+    var user_info = {"logged_in":0};
+  </script>
+
+  <!-- Google recommended indication of translated versions -->
+  
+
+
+  <title>Jenkins CLI: create node</title>
+  <meta name="description" content="">
+  <meta name="author" content="szabgab">
+
+  <!-- The Open Graph protocol -->
+  <meta property="og:title" content="Jenkins CLI: create node"/>
+  <meta property="og:type" content="article"/>
+  
+      <meta property="og:image" content="/img/code_maven_128.png"/>
+  
+  <meta property="og:site_name" content="Code Maven"/>
+  <meta property="og:description" content=""/>
+  
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" rel="stylesheet">
+
+
+  <link href="css/style.css" rel="stylesheet">
+  
+  <link href="stati css/site.css" rel="stylesheet">
+
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="javascripts/perlmaven.js?20210507.1"></script>
+  <script src="js/maven.js"></script>
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@szabgab" />
+  <meta name="twitter:creator" content="@szabgab" />
+  <meta name="twitter:title" content="Jenkins CLI: create node" />
+  <meta name="twitter:description" content="" />
+  
+     <meta name="twitter:image" content="img/code_maven_128.png" />
+  
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Code Maven</a>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="navbar">
+      
+        <ul class="nav navbar-nav   ">
+          
+            
+
+<!--
+            
+              
+                <li><a href="/pm/login">Login</a></li>
+                <li><a href="/pm/register">Register</a></li>
+              
+            
+-->
+
+            
+
+            
+                        <li><a href="/exercises">Exercises</a></li>
+            
+
+<!--
+            
+-->
+
+            
+
+            
+                        <li><a href="/slides">Slides</a></li>
+            
+
+<!--
+            
+-->
+
+            
+
+            
+                        <li><a href="/courses">Courses</a></li>
+            
+
+<!--
+            
+-->
+
+            
+
+            
+                        <li><a href="/services">Services</a></li>
+            
+
+<!--
+            
+-->
+
+            
+
+            
+          
+        </ul>
+      
+        <ul class="nav navbar-nav navbar-right  ">
+                        <li><a href="/keywords">Type keyword:</a></li>
+            
+
+<!--
+            
+-->
+
+            
+
+            
+          
+            
+
+<!--
+            
+-->
+
+            
+              <li><form id="search_form">
+                     <input id="search_box" type="text" data-provide="typeahead" data-items="4" aria-label="Enter your search term">
+                  </form>
+              </li>
+            
+
+            
+                        <li><a href="/archive">Archive</a></li>
+            
+
+<!--
+            
+-->
+
+            
+
+            
+                        <li><a href="/about">About</a></li>
+            
+
+<!--
+            
+-->
+
+            
+
+            
+          
+            
+
+<!--
+            
+-->
+
+            
+
+            
+              <li><a href="/atom" rel="alternate" type="application/atom+xml"><img src="img/feed-icon16x16.png" id="atom-icon" alt="Atom feed" /></a></li>
+            
+          
+        </ul>
+      
+    </div>
+  </div>
+</nav>
+
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-2" id="left-column">
+
+            
+         
+      
+
+
+      
+<div id="series">
+  <a href="jenkins.html">Jenkins</a>
+  
+  <hr>
+  <ol>
+  
+    <li>Installations
+      <ol>
+        
+          <li>
+            <a  href="install-jenkins-on-ubuntu.html">Install Jenkins on Ubuntu</a>
+            
+          </li>
+        
+          <li>
+            <a  href="vagrant-for-jenkins-on-ubuntu.html">Vagrant for Jenkins on Ubuntu</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-in-docker.html">Running Jenkins in Docker</a>
+            
+          </li>
+        
+      </ol>
+    </li>
+  
+    <li>Examples
+      <ol>
+        
+          <li>
+            <a  href="jenkins-pipeline-hello-world.html">Jenkins Pipeline - Hello World</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-running-external-programs.html">Jenkins Pipeline: running external programs with sh or bat</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-send-email-notifications.html">Jenkins Pipeline: Send e-mail notifications</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-short-text.html">Jenkins Pipeline: Add some text to the job using manager.addShortText</a>
+            
+          </li>
+        
+          <li>
+            <a class="current" href="jenkins-cli-create-node.html">Jenkins CLI: create node</a>
+            <span class="glyphicon glyphicon-ok"></span>
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-builduser.html">Jenkins Pipeline BuildUser plugin</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-environment-variables.html">Jenkins Pipeline - set and use environment variables</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-git-check-out-using-reference.html">Jenkins Pipeline: git checkout using reference to speed up cloning large repositories</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-report-failed-stage-name.html">Jenkins report the name of the stage that failed</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-triggers.html">Jenkins triggers: Periodic polling</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-set-job-name-and-description.html">How to set the job number and description for a Jenkinsfile in a Jenkins Pipeline?</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-readfile-writefile.html">Jenkins Pipeline: read a file and write a file - readFile, writeFile</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-separate-jobs-for-development-and-production.html">Jenkins: separate jobs for development and production</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-get-current-user.html">Jenkins pipeline: get current user</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-parameters.html">Jenkins Pipeline parameters</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-arbitrary-code-execution.html">Jenkins pipelines: Arbitrary code execution in the shell</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-parallel-stages.html">Jenkins pipeline: parallel stages</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-collect-exit-code-from-external-commands.html">Jenkins Pipeline: Collect exit code from external commands</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-get-previous-build-status.html">Jenkins pipeline: Get previous build status - getPreviousBuild</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-interactive-input-during-process.html">Jenkins pipeline: interactive input during process</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-list-agents-by-name-or-by-label.html">Jenkins pipeline: List agents by name or by label</a>
+            
+          </li>
+        
+          <li>
+            <a  href="jenkins-pipeline-add-badges.html">Jenkins pipeline: add badges</a>
+            
+          </li>
+        
+      </ol>
+    </li>
+  
+  </ol>
+</div>
+
+
+
+    </div>
+    <div class="col-md-7" id="content">
+
+
+
+
+<div id="show_content">
+<h1>Jenkins CLI: create node</h1>
+
+
+
+
+  <div id="indexes">
+    <ul>
+      
+         <li><a class="btn btn-mini btn-primary kw-button" href="/search/jenkins-cli">jenkins-cli</a></li>
+      
+    </ul>
+  </div>
+
+
+
+<div class="prev-next">
+<h2>
+
+  <span class="label label-lg label-success prev">
+    <a href="jenkins-pipeline-short-text.html" title="Jenkins Pipeline: Add some text to the job using manager.addShortText"><span class="glyphicon glyphicon-chevron-left"></span> Prev</a>
+  </span>
+
+
+
+  <span class="label label-lg label-success next">
+    <a href="jenkins-pipeline-builduser.html" title="Jenkins Pipeline BuildUser plugin">Next <span class="glyphicon glyphicon-chevron-right"></span> </a>
+  </span>
+</h2>
+</div>
+
+
+
+
+
+<div role="main" id="main">
+
+  <div id="top-poster"></div>
+
+  <div id="abstract">
+    
+    <div id="abstract_text"> <p>
+In some situation you might need to add nodes (aka. agents) programmatically to a Jenkins setup.
+This is a shell script to register the new node based on the <a href="https://gist.github.com/ChristopherDavenport/bc5ba7a33d5dd5fc975da81c4a270a90">gist of Christopher Davenport</a>.
+<p>
+</div>
+  </div>
+  <div id="after-abstract"></div>
+  
+  <p>
+<b>examples/jenkins/create-jenkins-node.sh</b><br><pre class="prettyprint linenums ">
+#!/bin/bash
+
+JENKINS_URL=$1
+NODE_NAME=$2
+NODE_HOME='/home/build/jenkins-node'
+EXECUTORS=1
+SSH_PORT=22
+CRED_ID=$3
+LABELS=build
+USERID=${USER}
+
+cat &lt;&lt;EOF | java -jar ~/bin/jenkins-cli.jar -s $1 create-node $2
+&lt;slave&gt;
+  &lt;name&gt;${NODE_NAME}&lt;/name&gt;
+  &lt;description&gt;&lt;/description&gt;
+  &lt;remoteFS&gt;${NODE_HOME}&lt;/remoteFS&gt;
+  &lt;numExecutors&gt;${EXECUTORS}&lt;/numExecutors&gt;
+  &lt;mode&gt;NORMAL&lt;/mode&gt;
+  &lt;retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/&gt;
+  &lt;launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.5"&gt;
+    &lt;host&gt;${NODE_NAME}&lt;/host&gt;
+    &lt;port&gt;${SSH_PORT}&lt;/port&gt;
+    &lt;credentialsId&gt;${CRED_ID}&lt;/credentialsId&gt;
+  &lt;/launcher&gt;
+  &lt;label&gt;${LABELS}&lt;/label&gt;
+  &lt;nodeProperties/&gt;
+  &lt;userId&gt;${USERID}&lt;/userId&gt;
+&lt;/slave&gt;
+EOF
+</pre>
+<p>
+<p>
+Notes:
+<p>
+<ul>
+   <li>"Agent" and "node" is often used interchangably and in the old days they were called "slaves" so you will still see that word used in some documentation and in the code.</li>
+   <li>The origrinal name of the Jenkins project was Hudson and that too still appears in a lot of the code.</li>
+   <li>remove the -remoting flag</li>
+</ul>
+
+
+  <div id="after-content"></div>
+</div>
+
+
+
+
+<div class="prev-next">
+<h2>
+
+  <span class="label label-lg label-success prev">
+    <a href="jenkins-pipeline-short-text.html" title="Jenkins Pipeline: Add some text to the job using manager.addShortText"><span class="glyphicon glyphicon-chevron-left"></span> Prev</a>
+  </span>
+
+
+
+  <span class="label label-lg label-success next">
+    <a href="jenkins-pipeline-builduser.html" title="Jenkins Pipeline BuildUser plugin">Next <span class="glyphicon glyphicon-chevron-right"></span> </a>
+  </span>
+</h2>
+</div>
+
+
+
+<hr>
+<div id="creators">
+   
+
+      
+        <img src="img/szabgab.png" alt="Gabor Szabo" />
+<!--
+        Gábor who writes the articles of the Code Maven site offers <a href="/courses">courses</a> in in the subjects
+that are discussed on this web site.
+<p>
+Gábor helps companies set up <b>test automation</b>, CI/CD
+<b>Continuous Integration</b> and <b>Continuous Delivery</b> and other <b>DevOps</b> related
+systems. Gabor can help your team improve the development speed and reduce the risk of bugs.
+<p>
+He is also the author of a number of <a href="https://leanpub.com/u/szabgab">eBooks</a>.
+<p>
+<a href="https://szabgab.com/contact.html">Contact Gabor</a> if you'd like to hire his services.
+<p>
+If you would like to <b>support</b> his freely available work, you can do it via
+<a href="https://www.patreon.com/szabgab">Patreon</a>, <a href="https://github.com/sponsors/szabgab/">GitHub</a>,
+or <a href="https://paypal.me/szabgab">PayPal</a>.
+
+
+-->
+        <div class="author_text">
+           Written by<br>
+           
+             <a href="https://www.linkedin.com/in/szabgab/">Gabor Szabo</a>
+           
+        </div>
+      
+
+   
+</div>
+
+
+
+
+  <hr>
+  <p>
+  Published on 2018-08-22
+  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+  If you have any comments or questions, feel free to post them on the source of this page in GitHub. <a href="https://github.com/szabgab/code-maven.com/tree/main/sites/en/pages//jenkins-cli-create-node.txt">Source on GitHub.</a>
+  <a href="https://github.com/szabgab/code-maven.com/issues/new?title=&body=https://code-maven.com/jenkins-cli-create-node">Comment on this post</a>
+</div>
+
+</div>
+
+    </div>
+
+
+
+   
+
+<div id="modal"></div>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CB0RC0YM71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CB0RC0YM71');
+</script>
+
+
+
+
+
+</body>
+</html>
+
+
+

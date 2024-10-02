@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Form</title>
+    <link rel="stylesheet" href="styles copy.css">
+</head>
+
+<body>
+
+    
+    <div id="container">
+        <header>
+            <div class="header-width">
+                <div class="flex">
+                    <img src="images/logo-1.png" alt="logo-1">
+                </div>
+    
+                <div class="main_heading flex">
+                    <h2>PEARLS ACADEMY</h2>
+                    <h3>K-12 School</h3>
+                    ...towards professional learning
+                </div>
+    
+                <div class="heading flex">
+                    <h3>PEARLS TALENT SEARCH EXAM 2023-24</h3>
+                </div>
+    
+                <div class="flex" class="logo">
+                    <img src="images/logo-2.png" alt="logo-2">
+                </div>
+            </div>
+        </header>
+        <form action="/submit" method="post">
+
+            <div class="detail-section">
+                <div class="hallcenter-detail">
+                    <h1>HALL TICKET</h1>
+                    <div class="date-time">
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" placeholder="time" required>
+                        
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" placeholder="date" required>
+                    </div>
+                    <div class="exam-center">
+                        <label for="label1">Exam center</label>
+                        <input type="text" id="label1" name="label1" required>
+                    </div>
+                </div>
+
+                <div class="candidate-image">
+                    <img src="image1.jpg" alt="Candidate Image">
+                    <label for="candidateImage">Candidate Image:</label>
+                    <input type="file" id="candidateImage" name="candidateImage" accept="image/*">
+                </div>
+            </div>
+
+            <div class="hallticket-details">
+                <label for="label2">Hall Ticket no.:</label>
+                <input type="text" id="label2" name="label2" required>
+
+                <label for="label3">Examination Class</label>
+                <input type="text" id="label3" name="label3" required>
+            </div>
+
+            <div class="candidate-details">
+                <div class="candidate-name">
+                    <label for="label4">Candidate Name</label>
+                    <input type="text" id="label4" name="label4" required>
+                </div>
+                <div class="candidate-name">
+                    <label for="extraLabel">Father/Guardian Name</label>
+                    <input type="text" id="extraLabel" name="extraLabel" required>
+                </div>
+
+
+                <h2>Important Instructions to be strictly complied with</h2>
+                <ul>
+                    <li>Important Instructions to be strictly complied with</li>
+                    <li>Report at the Exam Centre at least by 10.45am.</li>
+                    <li>The Exam time is from 11.30am to 01.00pm</li>
+                    <li>Please carry a printed copy of this Hall Ticket with a recent Passport size Photograph pasted in
+                        the given space.</li>
+                    <li>Please carry your AADHAAR CARD or SCHOOL IDENTITY CARD with you to the Exam Centre.</li>
+                    <li>Please get the sign of your parent on the Hall Ticket</li>
+                    <li>Please submit the Hall Ticket with your answer sheet to the Invigilator at the Exam Centre.</li>
+                    <li>No candidate shall be allowed to leave the Exam Centre before the examination is over.</li>
+                    <li>Follow the instructions given by the invigilator(s) specially for writing roll number in the
+                        answer book.</li>
+                    <li>Do not believe in the fake videos and messages uploaded on social media. Do not spread rumours
+                        either.</li>
+                    <li>Carry on blue/royal blue ball point pen, admit card and identity proof in a transparent pouch.
+                    </li>
+                    <li>Mobile and other electronic items are strictly prohibited inside the exam hall.</li>
+                </ul>
+            </div>
+
+            <div class="signature-container">
+                <h3>Signature</h3>
+                <div class="signature-fields">
+                    <div class="signature-input">
+                        <input type="text" id="signature1" name="signature1" placeholder="Please sign here" required>
+                        <label for="signature1">PTSE Incharge</label>
+                    </div>
+                    <div class="signature-input">
+                        <input type="text" id="signature2" name="signature2" placeholder="Please sign here" required>
+                        <label for="signature2">Exam Centre Incharge</label>
+                    </div>
+                    <div class="signature-input">
+
+                    </div>
+                    <div class="signature-input">
+                        <input type="text" id="signature3" name="signature3" placeholder="Please sign here" required>
+                        <label for="signature3">Parent/Guardian</label>
+                    </div>
+                    <div class="signature-input">
+                        <input type="text" id="signature4" name="signature4" placeholder="Please sign here" required>
+                        <label for="signature4">Candidate</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+        
+            <footer>
+                <img src="footer-image.jpg" alt="Footer Image">
+            </footer>
+    </div>
+
+</body>
+
+</html>

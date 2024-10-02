@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Heart Border Button</title>
+<style>
+  .heart-border-btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    background-color: transparent;
+    border: 2px solid transparent; /* Transparent border to create space for the heart shape */
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease; /* Add transition for smooth animation */
+  }
+
+  .heart-border-btn::before,
+  .heart-border-btn::after {
+    content: "";
+    position: absolute;
+    width: 20px; /* Adjust the size of the heart */
+    height: 30px; /* Adjust the size of the heart */
+    border-radius: 50%;
+    border: 2px solid red; /* Red border to create the heart shape */
+    animation: pulse-heart 1s ease infinite; /* Add animation for pulse effect */
+  }
+
+  .heart-border-btn::before {
+    left: -18px; /* Adjust the positioning of the left part of the heart */
+    top: -8px; /* Adjust the positioning of the top part of the heart */
+  }
+
+  .heart-border-btn::after {
+    left: 16px; /* Adjust the positioning of the right part of the heart */
+    top: -8px; /* Adjust the positioning of the top part of the heart */
+  }
+
+  @keyframes pulse-heart {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+</style>
+</head>
+<body>
+
+<button class="heart-border-btn">Click me</button>
+
+</body>
+</html>

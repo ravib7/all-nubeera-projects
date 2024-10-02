@@ -1,0 +1,387 @@
+body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    max-width: 85vw;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+}
+
+.header-width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.flex img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main_heading h2 {
+    font-size: 1.5em;
+}
+
+.main_heading h3 {
+    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.heading h3 {
+    font-size: 1.2em;
+}
+
+header
+{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.header-width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.flex img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main_heading h2 {
+    font-size: 1.5em;
+}
+
+.main_heading h3 {
+    font-size: 1em;
+}
+
+.heading h3 {
+    font-size: 1.2em;
+}
+
+#form-container {
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.detail-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hallcenter-detail {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hallcenter-detail h1 {
+    text-align: center;
+    max-width: 100vw;
+    margin: 15px 0px;
+    /* border: 2px solid black; */
+}
+
+.hallcenter-detail label {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+.hallcenter-detail input {
+    width: 45%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.candidate-image {
+    width: 20%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.candidate-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+.hallticket-details {
+    width: 100%;
+    display: flex;
+    margin: 10px 0px;
+    height: 40px;
+    justify-content: space-between;
+}
+
+.hallticket-details label {
+    width: 49%;
+    padding-left: 10px;
+    margin: 0px 0px 0px 10px;
+    border: 2px solid #000000;
+    height: 92%;
+}
+
+.hallticket-details input {
+    width: 49%;
+    padding-left: 10px;
+    margin: 0;
+    border: 2px solid #000000;
+    border-left: none;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+label {
+    display: block;
+    margin: 7px;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.date-time {
+    display: flex;
+    margin: 0px;
+    height: 40px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.date-time input {
+    width: 49%;
+    padding-left: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-left: none;
+    height: auto;
+}
+
+.date-time label {
+    width: 10%;
+    align-self: center;
+    border: 2px solid #000000;
+    padding: 10px 0px 0px 10px;
+    margin: 0px 0px 0px 10px;
+    height: 65%;
+}
+
+.exam-center {
+    display: flex;
+    height: 60px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.exam-center input {
+    width: 70%;
+    height: 100%;
+    padding: 0;
+    border: 2px solid #000000;
+    border-left: none;
+    margin: 0;
+}
+
+.exam-center label {
+    width: 30%;
+    height: 62%;
+    border: 2px solid #000000;
+    margin: 0;
+    padding: 20px 0px 0px 10px;
+    padding-left: 10px;
+}
+
+h2,
+h3 {
+    margin-top: 20px;
+}
+
+.candidate-details {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.candidate-details h2 {
+    height: 45px;
+    padding-top: 20px;
+    text-align: center;
+    background-color: #ddd;
+    border: 2px solid black;
+}
+
+.candidate-details label {
+    background-color: #ddd;
+    display: inline-block;
+}
+
+.candidate-details input {
+    display: inline-block;
+}
+
+.candidate-name {
+    display: flex;
+    height: 50px;
+}
+
+.candidate-name label {
+    width: 30%;
+    height: 90%;
+}
+
+.candidate-name input {
+    width: 70%;
+    height: 90%;
+}
+
+ul {
+    padding: 0;
+    margin: 15px 30px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.signature-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.signature-container h3 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.signature-fields {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.signature-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signature-container label {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.signature-container input {
+    width: 100%;
+    height: 12vh;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .detail-section {
+        flex-direction: column;
+    }
+
+    .hallcenter-detail,
+    .candidate-image {
+        width: 100%;
+    }
+
+    .hallticket-details {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5em;
+    }
+
+    .hallticket-details label,
+    .hallticket-details input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        border: 2px solid black;
+    }
+
+    .date-time {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5em;
+    }
+
+    .date-time input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+}
+
