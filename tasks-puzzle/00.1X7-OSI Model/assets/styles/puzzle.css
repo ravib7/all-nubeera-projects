@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:#6b6b69;
+  color:white;
+}
+
+
+#title {
+  font-size:23px;
+  text-align: center;
+}
+
+#rest1 {
+  font-size:18px;
+  text-align: center;
+}
+
+#text div {
+  position:relative;
+  height:100px;
+  width: 99px;
+  border: 1px dashed gray;
+  display: inline-block;
+  margin: 0;
+}
+
+#text {
+  width:730px;
+  height:101px;
+  background:black;
+  border:5px solid black;
+  margin:auto;
+  margin-left: 266px;
+  margin-top: 5px;
+  
+}
+
+#images {
+  margin-left: 268px;
+  display: flex;
+  gap: 7px;
+}
+#images {
+  width: 100%;
+  
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+#drag1,
+#drag2,
+#drag3,
+#drag4,
+#drag5,
+#drag6,
+#drag7
+ {
+  height: 100px;
+  width: 100px;
+  
+  display: inline-block;
+}
+
+#drag1:hover,
+#drag2:hover,
+#drag3:hover,
+#drag4:hover,
+#drag5:hover,
+#drag6:hover,
+#drag7:hover {
+  opacity: 0.6;
+}
+
+#Button
+{
+font-size: 17px;
+margin-left: 30px;
+box-sizing: border-box;
+margin-top: 50px;
+margin-left: 30px;
+align-items: center;
+color:white;
+/* background-color:rgb(55, 9, 220); */
+background-color:#007bff;
+}
+#Button:active{
+
+  background-color:  rgb(0, 255, 213);
+  
+}
+
+#myimages {
+  height: 100px;
+  width: 100px;
+  border: 1px dashed gray;
+  margin-left: 269.5px;
+  margin-top: 30px;
+  display: flex;
+  gap: 6px;
+  
+}
+
+
+
+
+
+  
+
