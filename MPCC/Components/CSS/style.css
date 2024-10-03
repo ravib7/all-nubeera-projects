@@ -1,0 +1,115 @@
+
+.body {
+  background-color: white;
+  width: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*---------------------Heading-img Start-----------------------*/
+
+/* .container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.headline {
+  text-align: center;
+}
+
+.headline img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: -7px;
+  margin-top: -15px;
+} */
+
+/* Media Query for screens smaller than 768px */
+/* @media (max-width: 767px) {
+  .container-fluid {
+      padding: 10px;
+      margin-top: 15px;
+      margin-bottom: 7px;
+  }
+} */
+
+/* Media Query for screens smaller than 576px */
+/* @media (max-width: 575px) {
+  .container-fluid {
+      padding: 5px;
+      margin-top: 15px;
+      margin-bottom: 7px;
+  }
+} */
+
+/*---------------------Heading-img End-----------------------*/
+
+
+/*-------------------upload-image start-----------------*/
+
+.container-fluid {
+  width: 100%;
+}
+
+.upload-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.alb {
+  width: 98%;
+}
+
+.alb img {
+  max-height: 537px;
+  margin-top: 4px;
+  margin-left: -13px;
+  width: 102%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Styles for mobile devices */
+  .alb img {
+    max-height: 300px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for tablets */
+  .alb img {
+    max-height: 400px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* Styles for laptops */
+  .alb img {
+    max-height: 537px;
+  }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+  /* Styles for computers and big screens */
+  .alb img {
+    max-height: 560px;
+  }
+}
+
+@media (min-width: 1921px) {
+  /* Styles for larger screens */
+  .alb img {
+    max-height: 600px;
+  }
+}
+
+@media (min-width: 2560px) {
+  /* Styles for TVs and ultra-wide screens */
+  .alb img {
+    max-height: 700px;
+  }
+}
+
+/*-------------------upload-image End-----------------*/
+
