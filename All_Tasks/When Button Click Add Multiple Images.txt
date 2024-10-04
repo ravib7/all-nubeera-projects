@@ -1,0 +1,51 @@
+                                       
+                                                           When Button Click Add Multiple Images
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                        HTML
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>When Button Click Add Multiple Images</title>
+    
+</head>
+<body>
+    
+  <button id="myButton">Add Images</button>  
+<div id="images" ></div>
+
+<script src="practice.js"></script>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                         JS
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// get the button and div element by id
+
+var myButton = document.getElementById("myButton");
+var images = document.getElementById("images");
+
+
+//add an event listener to the button
+
+myButton.addEventListener("click", function() {
+    
+    //crete a new image element
+
+    var img = document.createElement("img");
+
+    //set the src attribute to the url of the image
+
+    img.src = "nature2.jpg";
+
+    //append to img element to the div element
+
+     images.appendChild(img);
+
+
+}); 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="helper.js" type="text/javascript" />
+        <script type="text/javascript">
+            document.getElementById('btntest').onclick = function() {
+                debugger;
+            var selchb = myFunction();
+            console.log(selchb);
+            }
+        </script>
+    </head>
+</html>
+Checkbox:
+<input type="checkbox" name="myCheck" value="UK">United Kingdom
+<input type="checkbox" name="myCheck" value="USA">United States
+<input type="checkbox" name="myCheck" value="IL">Illinois
+<input type="checkbox" name="myCheck" value="MA">Massachusetts
+<input type="checkbox" name="myCheck" value="UT">Utah
+
+<input type="button" value="Click" id="btntest" onclick="alert(myFunction());" />

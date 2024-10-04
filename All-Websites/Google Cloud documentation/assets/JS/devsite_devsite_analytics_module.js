@@ -1,0 +1,1 @@
+(function(_ds){var window=this;var Wha=class extends _ds.FR{Ca(){(window.dataLayer||[]).push({setupCloudConsent:"true"});super.Ca()}};try{window.customElements.define("devsite-analytics",Wha)}catch(a){console.warn("Unrecognized DevSite custom element - CloudxAnalytics",a)};})(_ds_www);

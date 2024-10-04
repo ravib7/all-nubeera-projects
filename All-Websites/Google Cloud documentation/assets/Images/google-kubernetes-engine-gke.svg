@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="24px" viewBox="0 0 21 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>gke</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Containers" transform="translate(-19.000000, -17.000000)">
+            <g id="gke" transform="translate(19.000000, 17.000000)">
+                <polygon id="Path" fill="#4285F4" points="13.7179597 13.2693173 19.1817402 16.4291073 19.1817402 17.6174044 13.2498928 14.1965491"></polygon>
+                <polygon id="Path" fill="#669DF6" points="8.08315474 13.9804951 1.82726104 17.5903976 1.44020574 16.6271568 7.5340763 13.1072768"></polygon>
+                <rect id="Rectangle-path" fill="#AECBFA" fill-rule="nonzero" x="9.97342477" y="1.53938485" width="1.03514788" height="6.93173293"></rect>
+                <path d="M0,5.99549887 L0,18.0045011 L10.5045006,24 L21,18.0045011 L21,5.99549887 L10.5045006,0 L0,5.99549887 Z M18.7586798,16.6631658 L10.5045006,21.3353338 L2.25032147,16.6631658 L2.25032147,7.33683421 L10.5045006,2.66466617 L18.7496785,7.33683421 L18.7496785,16.6631658 L18.7586798,16.6631658 Z" id="Shape" fill="#AECBFA"></path>
+                <polygon id="Path" fill="#AECBFA" points="10.4864981 11.4058515 15.2571796 8.65116279 10.4864981 5.89647412 5.71581655 8.65116279"></polygon>
+                <polygon id="Path" fill="#669DF6" points="9.92841835 12.36009 5.29275611 9.60540135 5.29275611 15.1147787 9.92841835 17.8694674"></polygon>
+                <polygon id="Path" fill="#4285F4" points="11.0805829 12.36009 11.0805829 17.8694674 15.7162452 15.1147787 15.7162452 9.60540135"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

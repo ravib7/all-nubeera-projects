@@ -1,0 +1,31 @@
+h2
+{
+    text-align: center;
+    margin-top:30px;
+}
+
+p1
+{
+    font-size:17px;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: rgb(15, 166, 225);
+}
+
+p {
+    font-size:medium;
+    margin-left: 20px;
+}
+
+p2
+{
+    font-size:17px;
+    margin-top: px;
+    color: rgb(15, 166, 225);
+}
+
+p3 {
+    color: rgb(15, 166, 225);
+    row-gap: 100px;       
+
+}

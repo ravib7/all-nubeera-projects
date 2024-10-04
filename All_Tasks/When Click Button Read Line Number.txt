@@ -1,0 +1,44 @@
+                    
+                                                               When Click Button Read Line Number
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                            HTML
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>When Click Button Read Line Number </title>
+    </head>
+    <body>
+        <h2>What can javaScript Do ?</h2>
+
+        <p id="demo1">This Is Line One .</p>
+        <p id="demo2">This Is Line Two .</p>
+        <p id="demo3">This Is Line Three .</p>
+        <p id="demo3">This Is Line Four .</p>
+        <p id="demo3">This Is Line Five .</p>
+        <p id="demo3">This Is Line Six .</p>
+        <p id="demo3">This Is Line Seven .</p>
+        <p id="demo4">This Is Line Eight .</p>
+        <p id="demo5">This Is Line Nine .</p>
+        <p id="demo5">This Is Line Ten .</p>
+
+        <button type="button"  onclick="f1();">Click Me!</button>
+
+        <script src="practice.js"></script>
+    
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                              CSS
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+function f1(){
+    debugger;
+    var list = document.getElementsByTagName("p");
+    alert(list.length);
+    //document.getElementById('demo').innerHTML='Hello javaScript!';
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------

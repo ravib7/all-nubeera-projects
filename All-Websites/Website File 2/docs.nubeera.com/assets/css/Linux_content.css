@@ -1,0 +1,27 @@
+h2
+{
+    text-align: center;
+    margin-top:30px;
+    font-size: 30px;
+}
+
+p1
+{
+    font-size:20px;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: rgb(15, 166, 225);
+}
+
+p {
+    font-size:medium;
+    margin-left: 35px;
+    font-size: 17px;
+}
+
+
+img {
+    width: 450px;
+    height: 400px;
+    /* margin-left: 750px; */
+}

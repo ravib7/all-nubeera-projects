@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script nonce="9sMmVb7Oj78E7jCc22KyuAnEjo6Knw"
+            src="https://www.gstatic.com/devrel-devsite/prod/v07c44c7c1b3fe607b0ea91e300f4cf82edbe2da6334f7664661c6358babdf558/js/analytics_library.js">
+    </script>
+  </head>
+  <body>
+    <script nonce="9sMmVb7Oj78E7jCc22KyuAnEjo6Knw">
+      window['dataLayer'] = window['dataLayer'] || [];
+      if (window.AnalyticsLibrary) {
+        const analyticsLibrary = new AnalyticsLibrary();
+        analyticsLibrary.notifyIframeReady(true);
+      }
+    </script>
+  </body>
+</html>

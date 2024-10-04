@@ -1,0 +1,11 @@
+*{
+    width: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.navbar .ul .li
+{
+    text-align: left;
+    display: inline;
+}
