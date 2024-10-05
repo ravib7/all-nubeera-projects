@@ -1,0 +1,114 @@
+[20-Oct-2021 09:17:56 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/Connect_Db.php on line 10
+[20-Oct-2021 09:22:12 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/Connect_Db.php on line 10
+[20-Oct-2021 09:22:15 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/Connect_Db.php on line 10
+[20-Oct-2021 10:02:21 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/Connect_Db.php on line 10
+[20-Oct-2021 10:21:39 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/sthncg8yron9/public_html/polling.com/trainer_qs.php on line 42
+[20-Oct-2021 10:21:47 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/Connect_Db.php on line 10
+[20-Oct-2021 10:21:58 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/Connect_Db.php on line 10
+[20-Oct-2021 10:24:54 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/Connect_Db.php on line 10
+[20-Oct-2021 10:46:31 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/Connect_Db.php on line 10
+[20-Oct-2021 11:50:46 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/sthncg8yron9/public_html/polling.com/response.php on line 6
+[20-Oct-2021 11:50:53 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/sthncg8yron9/public_html/polling.com/response.php on line 6
+[20-Oct-2021 11:50:55 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/sthncg8yron9/public_html/polling.com/response.php on line 6
+[20-Oct-2021 11:51:05 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/Connect_Db.php on line 10
+[20-Oct-2021 11:51:09 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/Connect_Db.php on line 10
+[20-Oct-2021 11:51:32 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/Connect_Db.php on line 10
+[20-Oct-2021 12:09:17 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/sthncg8yron9/public_html/polling.com/response.php on line 34
+[20-Oct-2021 12:09:18 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/sthncg8yron9/public_html/polling.com/response.php on line 34
+[20-Oct-2021 12:09:19 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/sthncg8yron9/public_html/polling.com/response.php on line 34
+[20-Oct-2021 12:09:20 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/sthncg8yron9/public_html/polling.com/response.php on line 34
+[20-Oct-2021 12:09:22 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/sthncg8yron9/public_html/polling.com/response.php on line 34
+[20-Oct-2021 12:11:14 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/response.php on line 3
+[20-Oct-2021 12:11:14 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/Connect_Db.php on line 10
+[20-Oct-2021 12:28:46 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/response.php on line 4
+[20-Oct-2021 12:28:46 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/Connect_Db.php on line 10
+[20-Oct-2021 12:57:52 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 12:59:04 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 12:59:04 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 12:59:18 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 12:59:51 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 12:59:51 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 13:20:52 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:20:52 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 13:20:54 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:20:54 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 13:20:56 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:20:56 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 13:28:46 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:28:46 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 13:28:48 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:28:48 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 13:28:52 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:28:52 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 13:28:53 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:28:53 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 13:29:04 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:29:04 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 13:29:09 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:29:09 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 13:29:19 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:29:19 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 13:43:10 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:43:10 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 13:43:19 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:43:19 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 13:43:19 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:43:19 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 13:43:22 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:43:22 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'107.180.0.10' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[20-Oct-2021 13:48:34 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:48:34 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'localhost' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 11
+[20-Oct-2021 13:48:35 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:48:35 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'localhost' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 11
+[20-Oct-2021 13:52:11 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:52:11 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'dbuser'@'localhost' to database 'nubeera_db' in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 11
+[20-Oct-2021 13:56:42 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 13:58:09 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[20-Oct-2021 14:02:43 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/sthncg8yron9/public_html/polling.com/05.submit_response.php on line 11
+[20-Oct-2021 14:02:43 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:30:49 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:30:51 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:31:14 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:31:17 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:31:30 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:31:30 UTC] PHP Notice:  Undefined variable: servername in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[21-Oct-2021 05:31:32 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:31:32 UTC] PHP Notice:  Undefined variable: servername in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[21-Oct-2021 05:31:34 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:31:34 UTC] PHP Notice:  Undefined variable: servername in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[21-Oct-2021 05:31:37 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:31:37 UTC] PHP Notice:  Undefined variable: servername in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[21-Oct-2021 05:32:17 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:32:17 UTC] PHP Notice:  Undefined variable: servername in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[21-Oct-2021 05:34:16 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:34:16 UTC] PHP Notice:  Undefined variable: servername in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[21-Oct-2021 05:34:27 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:34:27 UTC] PHP Notice:  Undefined variable: servername in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[21-Oct-2021 05:34:48 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:34:48 UTC] PHP Notice:  Undefined variable: servername in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[21-Oct-2021 05:34:48 UTC] PHP Notice:  Undefined variable: username in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 11
+[21-Oct-2021 05:34:48 UTC] PHP Notice:  Undefined variable: password in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 11
+[21-Oct-2021 05:34:48 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'sthncg8yron9'@'localhost' (using password: NO) in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 11
+[21-Oct-2021 05:35:19 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:35:19 UTC] PHP Notice:  Undefined variable: servername in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[21-Oct-2021 05:35:19 UTC] PHP Notice:  Undefined variable: password in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 11
+[21-Oct-2021 05:35:19 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'dbuser'@'localhost' (using password: NO) in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 11
+[21-Oct-2021 05:35:21 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:35:21 UTC] PHP Notice:  Undefined variable: servername in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[21-Oct-2021 05:35:21 UTC] PHP Notice:  Undefined variable: password in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 11
+[21-Oct-2021 05:35:21 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'dbuser'@'localhost' (using password: NO) in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 11
+[21-Oct-2021 05:35:33 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:35:33 UTC] PHP Notice:  Undefined variable: servername in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[21-Oct-2021 05:35:33 UTC] PHP Notice:  Undefined variable: username in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 11
+[21-Oct-2021 05:35:33 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'sthncg8yron9'@'localhost' (using password: YES) in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 11
+[21-Oct-2021 05:35:50 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:35:50 UTC] PHP Notice:  Undefined variable: servername in /home/sthncg8yron9/public_html/polling.com/A.Connect_Db.php on line 10
+[21-Oct-2021 05:36:29 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:37:34 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:37:52 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:38:43 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 38
+[21-Oct-2021 05:38:47 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 38
+[21-Oct-2021 05:39:43 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:40:30 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:41:05 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4
+[21-Oct-2021 05:43:10 UTC] PHP Notice:  Undefined index: username in /home/sthncg8yron9/public_html/polling.com/04.response.php on line 4

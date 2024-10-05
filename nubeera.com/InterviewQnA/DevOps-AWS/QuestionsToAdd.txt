@@ -1,0 +1,10 @@
+Ansible vs Puppet vs Chef vs Terrform
+Which Tool(Ansible or Terraform) you used and why?
+
+Moving From Monolethic to Microservices
+https://docs.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/containerize-monolithic-applications
+
+Projects:
+https://aws.amazon.com/quickstart/architecture/dotnet-cicd-on-aws/
+https://d1.awsstatic.com/partner-network/QuickStart/dotnet-serverless-cicd-architecture.9b8b79495a3372cf4133ec2a52e8de77c0a4fc7e.png
+

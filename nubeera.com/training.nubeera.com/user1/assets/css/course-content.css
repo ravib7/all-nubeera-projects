@@ -1,0 +1,124 @@
+.course-curriculum-box {
+    margin-bottom: 40px;
+}
+.course-curriculum-box .course-curriculum-title .title {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+.course-curriculum-box .course-curriculum-title .total-time {
+    width: 130px;
+    display: inline-block;
+    text-align: right;
+}
+
+.course-curriculum-accordion .lecture-group-title .total-time {
+    width: 130px;
+    display: inline-block;
+    text-align: right;
+}
+.course-curriculum-accordion .lecture-group-title .title {
+    max-width: 60%;
+    font-weight: 600;
+}
+
+.course-curriculum-accordion .lecture-group-title {
+    position: relative;
+    padding: 10px 30px 10px 45px;
+    background: #f9f9f9;
+    border: 1px solid #e8e9eb;
+    cursor: pointer;
+    height: auto;
+    margin-top: 3px;
+    color: #505763;
+}
+
+.course-curriculum-box .course-curriculum-title {
+    padding-right: 31px;
+}
+
+.course-curriculum-accordion .lecture-group-title:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    position: absolute;
+    left: 22px;
+    font-size: 10px;
+    top: 16px;
+    color: #0b377e;
+}
+
+.course-curriculum-accordion .lecture-group-title[aria-expanded="false"]:before {
+    content: "\f067";
+}
+
+.course-curriculum-accordion .lecture-group-title[aria-expanded="true"]:before {
+    content: "\f068";
+}
+
+.course-curriculum-accordion .lecture-group-title[aria-expanded="true"] .total-lectures {
+    display: none;
+}
+.course-curriculum-accordion .lecture-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.course-curriculum-accordion .lecture-list .lecture {
+    padding: 12px 30px 12px 73px;
+    position: relative;
+    border-bottom: 1px solid #e8e9eb;
+    border-left: 1px solid #e8e9eb;
+    border-right: 1px solid #e8e9eb;
+    color: #686f7a;
+}
+
+.course-curriculum-accordion .lecture-list .lecture .lecture-title {
+    width: 50%;
+    display: inline-block;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-webkit-transition: 0.3s;
+}
+.course-curriculum-accordion .lecture-list .lecture .lecture-time {
+    width: 100px;
+    text-align: right;
+}
+
+.course-curriculum-accordion .lecture-list .lecture:before {
+    font-family: Font Awesome\ 5 Free;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    content: "\f144";
+    position: absolute;
+    left: 45px;
+    opacity: 0.3;
+    font-weight: 900;
+    font-size: 13px;
+    top: 17px;
+}
+.course-curriculum-accordion .lecture-list .lecture.has-preview {
+    color: #0b377e;
+}
+.course-curriculum-accordion .lecture-list .lecture.has-preview .lecture-title,
+.course-curriculum-accordion .lecture-list .lecture.has-preview .lecture-preview{
+    cursor: pointer;
+}
+.course-curriculum-accordion .lecture-list .lecture.has-preview .lecture-title:hover{
+    color: #003845;
+}
+
+

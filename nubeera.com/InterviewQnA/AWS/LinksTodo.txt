@@ -1,0 +1,36 @@
+EC2:
+https://www.wisdomjobs.com/e-university/aws-ec2-interview-questions.html
+
+S3:
+https://www.onlineinterviewquestions.com/aws-s3-interview-questions/
+What is S3 Data Consistency Model?
+https://www.youtube.com/watch?v=S7GVtbV-hWA
+https://www.youtube.com/watch?v=GoVxorWG0gM
+Cross Region Replication
+S3 Transfer Acceleration
+S3 Eventually Consistent Views	https://www.youtube.com/watch?v=TrdN30PocRY
+
+
+Microservice Design patterns: https://www.youtube.com/watch?v=SI9Ocb691ps
+
+
+IAM Permissions Boundary
+AWS Organization Service Control Policy(SCP)
+
+Database:
+https://www.whizlabs.com/blog/aws-database-interview-questions/
+
+https://www.youtube.com/watch?v=_Jv4H0GI1ls
+
+
+Why we use Resource group and Tag Editor?
+
+Projects:
+https://github.com/smirnov-am/cicd_lambda
+https://smirnov-am.github.io/ci-ci-pipeline-for-aws-lambda-python-runtime/
+
+https://smirnov-am.github.io/run-flask-on-aws-ecs/
+
+
+Build Data Lake(Health Care Client)
+https://www.youtube.com/watch?v=LeCJaTfEnEw

@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/sthncg8yron9/Repo/nubeera.com
+    - /bin/cp -a * $DEPLOYPATH
+    - /bin/cp -R . $DEPLOYPATH
