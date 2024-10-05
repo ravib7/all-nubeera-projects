@@ -1,0 +1,4 @@
+SELECT department.fullname, department.departmentname, department.departmentid
+FROM department , employee
+WHERE department.departmentid = employee.departmentid
+ORDER BY department.departmentid
